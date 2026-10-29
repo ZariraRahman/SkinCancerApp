@@ -16,12 +16,6 @@ st.set_page_config(
 st.title("Skin Cancer Detection CNN")
 st.write("Upload a skin image for an experimental model prediction.")
 
-st.warning(
-    "This application is for educational purposes only. "
-    "It cannot diagnose skin cancer. Consult a qualified healthcare "
-    "professional about any concerning skin changes."
-)
-
 @st.cache_resource
 def load_model():
     model_path = hf_hub_download(
